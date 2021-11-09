@@ -1,0 +1,140 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+}
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(22, 22, 22);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#projects {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+  justify-content: space-evenly;
+
+  background-color: rgb(221, 169, 105);
+}
+#footer {
+  width: 100%;
+  height: 50vh;
+  background-color: rgb(22, 22, 22);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#navbar {
+  width: 100%;
+  height: auto;
+  background-color: rgb(230, 95, 95);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: fixed;
+}
+h1 {
+  color: white;
+  font-size: 10vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+#head-desc {
+  color: rgb(221, 169, 105);
+  text-align: center;
+  font-size: 3vh;
+  margin-top: -30px;
+}
+.project-tile {
+  background-color: rgb(22, 22, 22);
+  width: 600px;
+  height: auto;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+#projects-head {
+  background-color: rgb(221, 169, 105);
+  text-align: center;
+  font-size: 3vh;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#projects-head h2 {
+  display: inline-block;
+  text-decoration: underline;
+}
+.project-title {
+  text-align: center;
+  padding-top: 2px;
+  font-size: 20px;
+}
+.navbar-items {
+  font-size: 4vh;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
+  color: white;
+  padding: 10px 30px 10px 0;
+}
+.links {
+  color: white;
+  text-decoration: none;
+  transition: color 500ms ease 0s;
+}
+.links:hover {
+  color: rgb(230, 95, 95);
+}
+.project-img {
+  width: 600px;
+}
+
+#footer-desc {
+  text-align: center;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 50px;
+  margin-top: -50px;
+}
+#profile-link {
+  text-decoration: none;
+  color: black;
+}
+#github-link {
+  background-color: rgb(221, 169, 105);
+  font-size: 20px;
+  padding: 10px 15px 10px 10px;
+  border-radius: 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  transition-property: font-size background-color;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+  transition-delay: 0ms;
+}
+#github-link:hover {
+  background-color: rgb(230, 95, 95);
+  font-size: 30px;
+}
+@media (max-width: 1250px) {
+  .project-tile {
+    width: 500px;
+  }
+  .project-img {
+    width: 500px;
+  }
+}
+@media (max-width: 550px) {
+  .project-tile {
+    width: 90%;
+  }
+  .project-img {
+    width: 100%;
+  }
+}
